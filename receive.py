@@ -4,10 +4,10 @@ import csv
 import os
 
 # シリアルポートの設定
-ser = serial.Serial('COM11', 115200)  # COMポートは受信機とつながってるやつの番号をThonnyなりデバイスマネージャーなりで確認してね
+ser = serial.Serial('COM14', 115200)  # COMポートは受信機とつながってるやつの番号をThonnyなりデバイスマネージャーなりで確認してね
 
 # 保存先のCSVファイルを指定
-data_csv_file_path = 'C:\\Users\\jun15\\Documents\\Planet-Q\\電装\\地上局\\NSE2024_grafana\\datar2.csv'  # 適宜変更
+data_csv_file_path = 'C:\\Users\\jun15\\Documents\\Planet-Q\\電装\\地上局\\NSE2024_grafana\\data.csv'  # 適宜変更
 tempdata_csv_file_path = 'C:\\Users\\jun15\\Documents\\Planet-Q\\電装\\地上局\\NSE2024_grafana\\tempdata.csv'  # 適宜変更
 
 while True:
@@ -44,6 +44,10 @@ while True:
                 writer.writerow(split_data)
             
             print(f"データを追加しました: {timestamp}, {data}")
+        
+        else:
+            print("Waiting...")
+            time.sleep(1)
 
     except KeyboardInterrupt:
         print("処理を中断しました。")

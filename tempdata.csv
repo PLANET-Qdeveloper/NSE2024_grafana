@@ -1,1 +1,2 @@
-timestamp,phase,missiontime,flighttime,lat,lon,alt,pressure,temperature,voltage
+timestamp,phase,flighttime,lat,lon,alt,pressure,temperature,voltage
+2024-08-20T10:32:05+09:00,5,1886,100.34,40.2423,140.0103,3.70,717.24,30.60,5.6

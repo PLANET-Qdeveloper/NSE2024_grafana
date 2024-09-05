@@ -53,11 +53,11 @@ def import_csv_to_influxdb(csv_file):
         print(f"Failed to import data from {csv_file}: {e}")
 
 # CSVファイルが置かれているディレクトリ
-csv_directory = 'C:\\Users\\jun15\\Documents\\Planet-Q\\電装\\地上局\\rig'
+csv_directory = 'C:\\Users\\jun15\\Documents\\Planet-Q\\電装\\地上局\\NSE2024_grafana'
 
 # インポートする特定のCSVファイルのリスト
 csv_files_to_import = [
-    'sendata.csv'
+    'tempdata.csv'
     # 他のファイル名を必要に応じて追加
 ]
 
